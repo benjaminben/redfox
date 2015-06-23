@@ -1,0 +1,762 @@
+/*MAIN*/
+
+body{
+    background-image: url(zoo-background.png);
+    overflow: hidden;
+}
+
+.main{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-height: 100%
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('aaargh-webfont-webfont.eot');
+    src: url('aaargh-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aaargh-webfont-webfont.woff2') format('woff2'),
+         url('aaargh-webfont-webfont.woff') format('woff'),
+         url('aaargh-webfont-webfont.ttf') format('truetype'),
+         url('aaargh-webfont-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.hide{
+    display: none;
+}
+
+#live, #listen, #watch, #fanmail, #contact, #name{
+    position: absolute;
+}
+
+#lineup, #livemedia{
+    font-family: 'aaarghnormal';
+}
+
+.flex{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; 
+    -webkit-flex-grow: 1;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    -ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.fox-ratio{
+    position:relative;
+    -ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+    align-items: center;
+    display: box;
+}
+
+.fox img{
+    max-height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+#contact, .nav{
+    font-family: 'aaarghnormal';
+}
+
+.nav{
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.aspect-ratio iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#name{
+    position: absolute;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+#socialmedia{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    bottom: 0%;
+    left: 48%;
+    margin-left: -80px;
+    padding-bottom: 5px;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.social img{
+    max-width: 40px;
+    height: auto;
+    padding: 5px
+}
+
+
+
+/*DESKTOP*/
+
+
+
+
+@media screen and (min-width: 851px) {
+
+.fox-ratio{
+    width:50%;
+    height: 100%;
+}
+
+.fox-ratio .fox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -70%; top: -5%;
+}
+
+.fox img{
+    max-width: 150%;
+}
+
+#live{
+    top: 6%;
+    left: 60%;
+    z-index: 2;
+}
+
+#listen{
+    top: 26%;
+    left: 72%;
+}
+
+#watch{
+    top: 46%;
+    left: 78%;
+}
+
+#fanmail{
+    top: 66%;
+    left: 77%;
+}
+
+.nav{
+    left: 10%
+}
+    
+.flex{
+    width:50%;
+    left: 52.5%
+}
+
+#blog{
+    width: 50%;
+    max-height: 50%;
+    content: c
+}    
+
+#lineup{
+    text-align: center;
+    margin-left: 5%;
+}
+
+#name{
+    max-height: 10%;
+    max-width: auto;
+    top: 15px;
+    right: 15px;
+}
+    
+#contact{
+    bottom: 0%;
+    right: 15px;
+}
+
+#soundcloud{
+    max-height: 100%;
+    margin-top: 10%;
+}
+    
+#fanmailUI{
+    width: 70%;
+    margin-top: 10%;
+}
+
+.aspect-ratio{
+  position: relative;
+  width: 70%;
+  height: 0;
+  padding-bottom: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"],button[type="reset"] {
+float:right;
+}
+
+textarea {
+height:200px;
+}
+    
+}
+
+
+
+
+/*TABLET*/
+
+
+
+
+@media screen and (max-width: 850px) and (min-width: 451px) {
+
+.fox-ratio{
+    width:50%;
+    height: 100%;
+}
+
+.fox-ratio .fox{
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    left: -70%;
+    top: -5%;
+    z-index: 0;
+}
+
+.fox img{
+    width: 120%;
+}
+
+.nav{
+    z-index: 1;
+    right: -95%;
+    bottom: 15%;
+    height: 0px;
+    padding: 50%;
+}
+
+#lineup{
+    position: absolute;
+    text-align: center;
+    margin-left: -20%;
+    top: 10%
+}
+    
+#live{
+    left: 0%;
+    bottom: 10%;
+}
+
+#listen{
+    right: 0%;
+    bottom: 10%
+}
+
+#watch{
+    bottom: -10%;
+    left: 0%;
+}
+
+#fanmail{
+    bottom: -10%;
+    right: 0%%;
+}
+
+.flex{
+    width:40%;
+    top: 20%;
+    right: 20%
+}
+
+.media{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+}
+
+#blog-ratio{
+    position: relative;
+    width: 0%;
+    height: 0;
+    padding-bottom: 60%;
+    justify-content: center;
+    align-items: center;
+}
+    
+#blog{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}    
+    
+#livemedia{
+    left: 40%;
+    top: 10%
+}
+
+#fanmailUI{
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    width: 100%;
+}
+
+#name{
+    position: absolute;
+    max-height: 30%;
+    max-width: 30%;
+    top: 10px;
+    right: 10px;
+}
+    
+#contact{
+    position: absolute;
+    font-family: 'aaarghnormal';
+    font-size: 15;
+    bottom: 0%;
+    right: 10;
+}
+
+.soundcloud-ratio{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+.soundcloud-ratio iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -5%;
+}
+
+.aspect-ratio{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.aspect-ratio iframe{
+  left: 40%;
+  top: -100%
+}
+
+
+#container { height: 50%}
+
+button[type="submit"],button[type="reset"] {
+float:right;
+}
+
+textarea {
+height:100%;
+}
+  
+#socialmedia{
+    left: 0%;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+}
+
+
+
+
+/*PHONE*/
+
+
+
+
+@media screen and (max-width: 450px) {
+
+.main{
+    flex-direction: column;
+}
+
+.fox-ratio{
+    width:60%;
+    height: 100%;
+}
+
+.fox-ratio .fox{
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    left: -70%; top: -8%;
+}
+
+.fox img{
+    max-width: 140%;
+}
+
+.nav{
+    left: 10%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+#live{
+    top: 10%;
+    right: -25%;
+}
+
+#listen{
+    top: 35%%;
+    right: -30%;
+}
+
+#watch{
+    top: 60%;
+    right: -32%;
+}
+
+#fanmail{
+    top: 85%;
+    right: -36%%;
+}
+
+#media{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 0%;
+    z-index: 1;
+}
+
+#lineup{
+    margin-left: 30%;
+    text-align: center;
+}    
+
+#livemedia{
+    position: absolute;
+    width: 100%;
+    left: 20%;
+    top: 10%;
+}
+
+#fanmailUI{
+    position: absolute;
+    right: 10%;
+    width: 80%;
+    height: 170%;
+    top: 0%;
+}
+
+#lineup{
+    margin-left: 0%;
+    margin-top: 15%;
+    height: 100%
+}    
+
+#name{
+    max-height: 50%;
+    max-width: 50%;
+    top: 60%;
+    left: 25%;
+    opacity: .2
+}
+
+#contact {
+    position: absolute;
+    font-family: 'aaarghnormal';
+    font-size: 15;
+    bottom: 0%;
+    right: 10px;
+}
+
+#blog{
+    visibility: hidden;
+}    
+
+.soundcloud-ratio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    right: 0%
+    
+}
+
+#soundcloud{
+    height: 100%;
+}
+    
+.soundcloud-ratio iframe{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    bottom: 20%;
+}
+
+.aspect-ratio{
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+
+.aspect-ratio iframe{
+  top: 0%;   
+}
+
+#container { height: 50%; }
+
+button[type="submit"],button[type="reset"] {
+float:left;
+}
+
+textarea {
+height:50%;
+}
+
+#socialmedia{
+    left: 0%;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+    
+}
+
+
+
+
+/*FANMAIL INTERFACE*/
+
+
+
+
+*,*::before,*::after { box-sizing:border-box; }
+*:focus { outline:none; }
+
+button,input,textarea { appearance:none; background:none; }
+button::-moz-focus-inner,input::-moz-focus-inner { border:0; padding:0; }
+
+#container { display:block; width: 100%}
+
+form {
+overflow:auto;
+}
+
+button[type="submit"],button[type="reset"] {
+border:none;
+border-radius:5px;
+color:#C94591;
+cursor:pointer;
+float:right;
+font-family:"Titillium Web", arial, sans-serif;
+font-size:21px;
+font-weight:400;
+margin:10px 0 0 15px;
+padding:5px 20px;
+text-decoration:none;
+transition:all 160ms linear;
+}
+
+button[type="submit"]:hover,button[type="reset"]:hover { text-decoration-color:aqua; }
+
+input[type="text"],input[type="email"] {
+background-color:#fff !important;
+border: 1px solid;
+border-radius:5px;
+color: #DF75DA;
+font-family:"Titillium Web", arial, sans-serif;
+font-size:16px;
+font-weight:400;
+height:43px;
+margin:0 0 14px;
+overflow:auto;
+padding:8px 0 8px 13px;
+width:100%;
+}
+
+input[type="email"]:required:invalid,input[type="email"]:focus:invalid {
+background:url("http://www.markhillard.com/images/locked.png");
+background-image:url("http://www.markhillard.com/fonts/lock-new.svg");
+background-position:right 8px center;
+background-repeat:no-repeat;
+background-size:23px 23px;
+box-shadow:none;
+}
+
+input[type="email"]:required:valid,input[type="email"]:focus:valid {
+background:url("http://www.markhillard.com/images/unlocked.png");
+background-image:url("http://www.markhillard.com/fonts/unlock-new.svg");
+background-position:right 8px center;
+background-repeat:no-repeat;
+background-size:23px 23px;
+}
+
+textarea {
+background-color:#fff;
+border: 1px solid;
+border-radius:5px;
+clear:left;
+color: #DF75DA;
+display:block;
+float:left;
+font-family:"Titillium Web", arial, sans-serif;
+font-size:15px;
+font-weight:400;
+margin:0 0 4px;
+overflow:auto;
+padding:8px 0 8px 13px;
+resize:none;
+width:100%;
+}
+
+.invalid,.success,.error,.reset {
+display:none;
+float:left;
+margin:9px 0 0 13px;
+position:absolute;
+top:360px;
+}
+
+.invalid,.error { color:#f5b2b6; }
+.success,.reset { color:#d7f5b2; }
+
+
+
+
+/*ANIMATION*/
+
+
+
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  1% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-.5deg);
+  }
+
+  51% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(.5deg);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@keyframes slipOut {
+  0% {
+      -webkit-transform: translate3d(0, 0, 0);;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+  }
+  100% {
+      visibility: hidden;
+      -webkit-transform: translate3d(0, -20%, 0);;
+      transform: translate3d(0, -20%, 0);
+      opacity: 0;
+  }
+}
+
+
+.slipOut{
+  -webkit-animation-name: slipOut;
+  animation-name: slipOut;
+  -webkit-animation-duration: .2s;
+  animation-duration: .45s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+}
+
+@keyframes slipIn {
+  0% {
+      visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);;
+      transform: translate3d(0, -20%, 0);
+      opacity: 0;
+  }
+  100% {
+      -webkit-transform: translate3d(0, -20%, 0);;
+      transform: translate3d(0, 0%, 0);
+      opacity: 1;
+  }
+}
+
+
+.slipIn{
+  -webkit-animation-name: slipOut;
+  animation-name: slipOut;
+  -webkit-animation-duration: .45s;
+  animation-duration: .45s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
