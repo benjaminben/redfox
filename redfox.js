@@ -54,7 +54,7 @@ var logo = $("img[src='logo.png']");
 
     var quiver = 'animated shake';
     var quiverEnd = 'animationend';
-    $("#live, #listen, #watch, #fanmail, .fox").hover(function(){
+    $("#live, #listen, #watch, #fanmail, .fox, #name").hover(function(){
         $(logo).addClass(quiver).one(quiverEnd,                               function(){
             $(this).removeClass(quiver);
         });
